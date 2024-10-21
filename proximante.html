@@ -11,22 +11,30 @@
 </head>
 
 <body>
-    <div id="side-menu" class="side-menu">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
-        <a href="index.html">Cartelera</a>
-        <a href="hoy.html">Sesiones Hoy</a>
-        <a href="proximante.html">Próximamente</a>
-    </div>
-    <header>
-        <div class="top-menu">
-            <button class="menu-btn" onclick="openMenu()">☰ Menú</button>
-            <div class="logo">Logo</div>
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar películas...">
-                <button class="search-btn">🔍</button>
+    <header class="header">
+        <nav class="header-nav">
+            <div class="header-nav-logo">
+                <button class="menu-btn" onclick="openMenu()">☰</button>
+                <a href="index.html">Cine Apollo</a>
             </div>
-            <button class="login-btn">Entrar</button>
-        </div>
+
+            <ul class="header-nav-menu">
+                <li>Cartelera</li>
+                <li>Pronto</li>
+                <li>Comidas</li>
+            </ul>
+
+            <div class="header-nav-menu-search">
+                <input type="text" placeholder="Buscar películas...">
+                <button>🔍</button>
+            </div>
+
+            <div class="header-nav-login">
+                <a href="login.html">Iniciar sesion</a>
+                <a href="login.html">Registrarse</a>
+            </div>
+            
+        </nav>
     </header>
 
     <section class="filter-section">
