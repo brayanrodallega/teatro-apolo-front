@@ -15,84 +15,105 @@ body {
     color: #333;
 }
 
-/* Estilos del Menú Lateral */
-.side-menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #3498db;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.header {
+    padding: 20px;
+    background-color: #000000;
+    width: 100%;
 }
 
-.side-menu a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.side-menu a:hover {
-    background-color: #2980b9;
-}
-
-.side-menu .close-btn {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 36px;
-    padding: 10px;
-    color: white;
-}
-
-.side-menu .close-btn:hover {
-    color: #f1f1f1;
-}
-
-/* Estilos del Header y Top Menu */
-header {
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.top-menu {
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.menu-btn, .login-btn, .search-btn {
-    padding: 10px;
-    background-color: #3498db;
+.header-nav-logo {
+    font-size: 1.3rem; 
     color: white;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-nav-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-nav-logo button {
     border: none;
-    border-radius: 5px;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
     cursor: pointer;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.search-bar {
+.header-nav-menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    font-size: 1.1rem;
+    color: white;
 }
 
-.search-bar input {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
+.header-nav-menu li {
+    list-style: none;
+    cursor: pointer;
+    background-color: blue;
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease; 
 }
 
-.search-bar button {
-    border-radius: 0 5px 5px 0;
+.header-nav-menu li:hover {
+    background-color: darkblue; 
+}
+
+.header-nav-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-nav-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.header-nav-login a:hover {
+    color: lightgray; /* Color de texto al hacer hover */
+}
+
+.header-nav-menu-search {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.header-nav-menu-search input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.1rem;
+    margin-right: 10px;
+    border-bottom: solid 1px gray;
+}
+
+.header-nav-menu-search button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
 }
 
 /* Estilos de la Sección de Filtros */
@@ -291,4 +312,78 @@ footer a:hover {
 
 .seat:hover {
     background-color: #2980b9;
+}
+
+/* Estilo de Carrusel */
+
+
+
+.carousel {
+    position: relative;
+    width: 100%; /* Cambiado a 100% */
+    height: 60vh; /* Altura de 40vh */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Asegurar que ocupe toda la altura */
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%; /* Asegurar que ocupe toda la altura */
+    display: flex; /* Para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Mantener la relación de aspecto de la imagen */
+    border-radius: 10px;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 1; /* Asegura que los botones estén por encima de las imágenes */
+    border-radius: 15px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.active {
+    background-color: black;
 }
