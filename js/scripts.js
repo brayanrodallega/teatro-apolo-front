@@ -13,3 +13,6 @@ function closeMenu() {
 // Event listeners para el botón de abrir y el de cerrar el menú
 document.querySelector('.menu-btn').addEventListener('click', openMenu);
 document.querySelector('.close-btn').addEventListener('click', closeMenu);
+
+
+
