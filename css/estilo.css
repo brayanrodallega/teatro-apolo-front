@@ -64,7 +64,15 @@ section button{
     border: none;
     width: 250px;
 }
-
+section select{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: aquamarine;
+    background-color: rgb(231, 231, 231);
+}
 #index{
     background-color: gray;
 }
