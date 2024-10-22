@@ -10,5 +10,5 @@ LoginForm.addEventListener('submit', (e) => {
         return alert('Correo o contraseña incorrecta')
     }
     alert('logeado con exito! 🙂‍↔️')
-    window.location.href = "index.html"
+    window.location.href = "index copy.html"
 })
