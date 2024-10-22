@@ -10,12 +10,25 @@
     <section>
         <form id="signinForm">
             <h2>Sign in</h2>
-            <label for="usu">Usuario</label>
-            <input type="text" placeholder="Escriba un usuario" id="user" autofocus required>
+            <label for="usu">Nombre Completo</label>
+            <input type="text" placeholder="Escriba su nombre completo" id="user" autofocus required>
             <label for="ema">Correo</label>
             <input type="email" placeholder="Escriba su correo" name="email" id="email" required>
             <label for="pas">Contraseña</label>
             <input type="password" id="password" placeholder="Escriba su contraseña" required>
+            <label for="tipo">Tipo de documento</label>
+            <select name="tipo" id="tipod" required>
+            <option value="cc">CC</option>
+            <option value="ce">CE</option>
+            <option value="ti">TI</option>
+            <option value="ppt">PPT</option>
+            </select>
+            <label for="num">Numero de documento</label>
+            <input type="text" placeholder="Escriba su documento" name="numdoc" id="numdoc" pattern="[0-9]+" required>
+            <label for="numt">Numero de telefono</label>
+            <input type="text" placeholder="Escriba su documento" name="numte" id="numte" pattern="[0-9]+" required>
+            <label for="num">Fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
             <input type="submit" value="Registrar">
         </form>
         <p>¿ya tienes cuenta? <a href="login.html">Iniciar sesion</a></p>
